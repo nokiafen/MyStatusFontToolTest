@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MyStatusFontToolTest.iml" filepath="$PROJECT_DIR$/MyStatusFontToolTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StatusFontColorTool.iml" filepath="$PROJECT_DIR$/StatusFontColorTool.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/statusbarfonttool/statusbarfonttool.iml" filepath="$PROJECT_DIR$/statusbarfonttool/statusbarfonttool.iml" />
     </modules>

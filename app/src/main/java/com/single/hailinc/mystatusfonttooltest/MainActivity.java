@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.doctor.hailin.mylibrary.StatusUtil;
+import com.doctor.hailin.mylibrary.Util.StatusBarHelper;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -11,6 +12,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        StatusUtil.fontColorReset(this,true);//true 黑体 ，false 白体
+        StatusBarHelper.setStatusBarLightMode(this);//true 黑体 ，false 白体
     }
 }

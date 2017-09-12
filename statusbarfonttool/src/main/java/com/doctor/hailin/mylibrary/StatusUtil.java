@@ -17,10 +17,16 @@ public class StatusUtil {
 
     public static  void fontColorReset(Activity activity, boolean darkmode){
             if(RomUitls.isMiui()){
-                setMiuiStatusBarDarkMode(activity,darkmode);
+               boolean result= setMiuiStatusBarDarkMode(activity,darkmode);
+                if(!result){
+                    VersionDeal(activity,darkmode);
+                }
             }else
             if(RomUitls.isFlyme()) {
-                setMeizuStatusBarDarkIcon(activity, darkmode);
+             boolean reuslt=   setMeizuStatusBarDarkIcon(activity, darkmode);
+                if(!reuslt){
+                    VersionDeal(activity,darkmode);
+                }
             }else {
                 VersionDeal(activity ,darkmode);
             }
@@ -83,6 +89,7 @@ public class StatusUtil {
                 activity.getWindow().setAttributes(lp);
                 result = true;
             } catch (Exception e) {
+                e.printStackTrace();
             }
         }
         return result;
